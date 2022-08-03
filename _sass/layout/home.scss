@@ -1,0 +1,382 @@
+// ************
+// Colors
+// ***********
+$yellow: #f6b801;
+$gold: #ffde00;
+$brown: #884c36;
+$red: #df0f16;
+$black: #010101;
+$white: #f2f2f9;
+$blackish: #161724;
+$gray: #686a6c;
+$transparent: rgba(255, 255, 255, 0);
+$skin: #efac8f;
+$crimson: #e51c24;
+// *********************
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: $blackish;
+}
+
+// *****************
+// Mixin
+// *************
+@mixin basics($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+@mixin position($top, $left) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}
+
+@mixin center-left($top) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: $top;
+}
+
+@mixin line {
+    transform: rotate(-180deg);
+    background: $black;
+    // background: red;
+    width: .27rem;
+    height: 3rem;
+}
+
+@mixin skull {
+    .head {
+        .skull {
+            @include basics(20rem, 20rem, $white);
+            border-radius: 50%;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                @include basics(12.5rem, 11rem, $white);
+                z-index: -1;
+                @include center-left(12.5rem);
+                border-radius: 0 0 5px 5px;
+            }
+            .line1 {
+                @include line;
+                @include position(20.6rem, 5.7rem);
+            }
+            .line2 {
+                @include line;
+                @include position(20.6rem, 9.9rem);
+            }
+            .line3 {
+                @include line;
+                @include position(20.6rem, 14rem);
+            }
+            .nose {
+                border-bottom: solid $black 1.8rem;
+                border-left: solid $transparent 1rem;
+                border-right: solid $transparent 1rem;
+                @include center-left(16rem);
+            }
+            .eye {
+                @include basics(14rem, auto, transparent);
+                // border: solid red 2px;
+            }
+        }
+    }
+}
+
+// **************************
+.container {
+    width: 100vw;
+    height: auto;
+    // border: solid red .1px;
+    // *******
+    ul {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        li {
+            list-style: none;
+            margin: 50px 0;
+        }
+    }
+}
+
+.sub1 {
+    @include skull;
+    .eye {
+        @include center-left(9rem);
+        .left-eye {
+            @include basics(6rem, .4rem, black);
+            transform: rotate(45deg);
+            &::after {
+                content: "";
+                display: block;
+                @include basics(6rem, .4rem, black);
+                transform: rotate(85deg);
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.sub2 {
+    @include skull;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 7rem, black);
+            border-radius: 50%;
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.sub3 {
+    @include skull;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 7rem, black);
+            border-radius: 50%;
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .halo {
+        @include basics(16.5rem, 1.5rem, $yellow);
+        border-radius: 50%;
+        @include center-left(-2rem);
+    }
+}
+
+.sub4 {
+    @include skull;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 6rem, black);
+            border-radius: 50%;
+        }
+        .right-eye {
+            @include basics(4.7rem, 4.7rem, black);
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: .7rem;
+        }
+    }
+}
+
+.sub5 {
+    @include skull;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 7rem, black);
+            border-radius: 50%;
+            &::after {
+                content: "";
+                display: block;
+                @include basics(2rem, 2rem, $white);
+                border-radius: 50%;
+                @include position(2rem, 3.5rem);
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.sub6 {
+    @include skull;
+    .eye {
+        @include center-left(7.8rem);
+        .left-eye {
+            @include basics(6rem, 4rem, black);
+            border-radius: 50%;
+            &::after {
+                content: "";
+                display: block;
+                @include basics(6rem, 4rem, $white);
+                @include position(1.3rem, 0);
+                border-radius: 50%;
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            @include position(0, 8rem);
+        }
+    }
+}
+
+
+.sub7 {
+    @include skull;
+    .eye {
+        @include center-left(6.5rem);
+        .left-eye {
+            i {
+                font-size: 6.5rem;
+                color: #ef3a5e;
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            @include position(0, 8rem);
+        }
+    }
+}
+
+.sub8 {
+    @include skull;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 7rem, black);
+            border-radius: 50%;
+            &::before {
+                content: "";
+                display: block;
+                @include basics(3.3rem, 1.8rem, #ef3a5e);
+                border-radius: 50%;
+                @include position(7.6rem, 1.5rem);
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+            top: 0;
+       }
+    }
+}
+
+.sub9 {
+    .head {
+        .skull {
+            @include basics(20rem, 20rem, linear-gradient(to bottom , #FF0018 0, #FFA52C 40%, #FFFF41 60%, #008018 80%, #0000F9 100%));
+            border-radius: 50%;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                @include basics(12.5rem, 11rem, linear-gradient(to bottom , #0000F9 40% , #0000F9 50%,#86007D 100%));
+                z-index: -1;
+                @include center-left(12.5rem);
+                border-radius: 0 0 5px 5px;
+            }
+            .line1 {
+                @include line;
+                @include position(20.6rem, 5.7rem);
+            }
+            .line2 {
+                @include line;
+                @include position(20.6rem, 9.9rem);
+            }
+            .line3 {
+                @include line;
+                @include position(20.6rem, 14rem);
+            }
+            .nose {
+                border-bottom: solid $black 1.8rem;
+                border-left: solid $transparent 1rem;
+                border-right: solid $transparent 1rem;
+                @include center-left(16rem);
+            }
+            .eye {
+                @include basics(14rem, auto, transparent);
+                // border: solid red 2px;
+                @include center-left(6rem);
+                .left-eye {
+                    @include basics(6rem, 7rem, black);
+                    border-radius: 50%;
+                   
+                }
+                .right-eye {
+                    @extend .left-eye;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+               }
+            }
+        }
+    }
+  
+}
+
+
+.sub10 {
+    @include skull;
+    position: relative;
+    .eye {
+        @include center-left(6rem);
+        .left-eye {
+            @include basics(6rem, 7rem, linear-gradient(#a10100,#da1f05,#f33c04, #fe650d, #ffc11f, #fff75d));
+            border-radius: 50%;
+            border: solid black 1px;
+            &::before {
+                content: "";
+                display: block;
+                border-radius: 50%;
+                @include position(7.6rem, 1.5rem);
+            }
+        }
+        .right-eye {
+            @extend .left-eye;
+            position: absolute;
+            right: 0;
+            top: 0;
+       }
+    }
+    .left-horn {
+        @include basics(6em,6rem, $transparent);
+        box-shadow: 1.5rem 1.5rem .01rem .1rem $crimson;
+        border-radius: 50%;
+        @include position(-4em, 3.5rem);
+        z-index: -1;
+        transform: rotate(120deg);
+    }
+
+    .right-horn {
+        @extend .left-horn;
+        @include position(-4rem, 9.8rem);
+        transform: rotate(-31.5deg);
+
+
+    }
+}

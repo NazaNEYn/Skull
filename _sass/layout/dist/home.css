@@ -1,0 +1,902 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background: #161724;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+}
+.container ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.container ul li {
+  list-style: none;
+  margin: 50px 0;
+}
+
+.sub1 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub1 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub1 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub1 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub1 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub1 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub1 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub1 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 9rem;
+}
+.sub1 .eye .left-eye, .sub1 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub1 .eye .right-eye, .sub1 .eye .right-eye {
+  width: 6rem;
+  height: 0.4rem;
+  background: black;
+  transform: rotate(45deg);
+}
+.sub1 .eye .left-eye::after, .sub1 .sub9 .head .skull .eye .right-eye::after, .sub9 .head .skull .sub1 .eye .right-eye::after, .sub1 .eye .right-eye::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.4rem;
+  background: black;
+  transform: rotate(85deg);
+}
+.sub1 .eye .right-eye {
+  position: absolute;
+  right: 0;
+}
+
+.sub2 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub2 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub2 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub2 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub2 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub2 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub2 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub2 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub2 .eye .left-eye, .sub2 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub2 .eye .right-eye, .sub2 .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub2 .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sub3 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub3 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub3 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub3 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub3 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub3 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub3 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub3 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub3 .eye .left-eye, .sub3 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub3 .eye .right-eye, .sub3 .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub3 .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sub3 .halo {
+  width: 16.5rem;
+  height: 1.5rem;
+  background: #f6b801;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -2rem;
+}
+
+.sub4 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub4 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub4 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub4 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub4 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub4 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub4 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub4 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub4 .eye .left-eye, .sub4 .sub10 .eye .right-eye, .sub10 .sub4 .eye .right-eye, .sub4 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub4 .eye .right-eye, .sub4 .sub8 .eye .right-eye, .sub8 .sub4 .eye .right-eye, .sub4 .sub7 .eye .right-eye, .sub7 .sub4 .eye .right-eye, .sub4 .sub6 .eye .right-eye, .sub6 .sub4 .eye .right-eye, .sub4 .sub5 .eye .right-eye, .sub5 .sub4 .eye .right-eye, .sub4 .sub1 .eye .right-eye, .sub1 .sub4 .eye .right-eye, .sub4 .sub2 .eye .right-eye, .sub2 .sub4 .eye .right-eye, .sub4 .sub3 .eye .right-eye, .sub3 .sub4 .eye .right-eye {
+  width: 6rem;
+  height: 6rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub4 .eye .right-eye {
+  width: 4.7rem;
+  height: 4.7rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0.7rem;
+}
+
+.sub5 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub5 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub5 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub5 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub5 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub5 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub5 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub5 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub5 .eye .left-eye, .sub5 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub5 .eye .right-eye, .sub5 .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub5 .eye .left-eye::after, .sub5 .sub9 .head .skull .eye .right-eye::after, .sub9 .head .skull .sub5 .eye .right-eye::after, .sub5 .eye .right-eye::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: absolute;
+  left: 3.5rem;
+  top: 2rem;
+}
+.sub5 .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sub6 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub6 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub6 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub6 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub6 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub6 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub6 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub6 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 7.8rem;
+}
+.sub6 .eye .left-eye, .sub6 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub6 .eye .right-eye, .sub6 .eye .right-eye {
+  width: 6rem;
+  height: 4rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub6 .eye .left-eye::after, .sub6 .sub9 .head .skull .eye .right-eye::after, .sub9 .head .skull .sub6 .eye .right-eye::after, .sub6 .eye .right-eye::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 4rem;
+  background: #f2f2f9;
+  position: absolute;
+  left: 0;
+  top: 1.3rem;
+  border-radius: 50%;
+}
+.sub6 .eye .right-eye {
+  position: absolute;
+  left: 8rem;
+  top: 0;
+}
+
+.sub7 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub7 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub7 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub7 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub7 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub7 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub7 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub7 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6.5rem;
+}
+.sub7 .eye .left-eye i, .sub7 .sub9 .head .skull .eye .right-eye i, .sub9 .head .skull .sub7 .eye .right-eye i, .sub7 .eye .right-eye i {
+  font-size: 6.5rem;
+  color: #ef3a5e;
+}
+.sub7 .eye .right-eye {
+  position: absolute;
+  left: 8rem;
+  top: 0;
+}
+
+.sub8 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub8 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub8 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub8 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub8 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub8 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub8 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub8 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub8 .eye .left-eye, .sub8 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub8 .eye .right-eye, .sub8 .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub8 .eye .left-eye::before, .sub8 .sub9 .head .skull .eye .right-eye::before, .sub9 .head .skull .sub8 .eye .right-eye::before, .sub8 .eye .right-eye::before {
+  content: "";
+  display: block;
+  width: 3.3rem;
+  height: 1.8rem;
+  background: #ef3a5e;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.5rem;
+  top: 7.6rem;
+}
+.sub8 .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sub9 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(to bottom, #FF0018 0, #FFA52C 40%, #FFFF41 60%, #008018 80%, #0000F9 100%);
+  border-radius: 50%;
+  position: relative;
+}
+.sub9 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: linear-gradient(to bottom, #0000F9 40%, #0000F9 50%, #86007D 100%);
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub9 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub9 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub9 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub9 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub9 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub9 .head .skull .eye .left-eye, .sub9 .head .skull .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: black;
+  border-radius: 50%;
+}
+.sub9 .head .skull .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sub10 {
+  position: relative;
+}
+.sub10 .head .skull {
+  width: 20rem;
+  height: 20rem;
+  background: #f2f2f9;
+  border-radius: 50%;
+  position: relative;
+}
+.sub10 .head .skull::after {
+  content: "";
+  display: block;
+  width: 12.5rem;
+  height: 11rem;
+  background: #f2f2f9;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 12.5rem;
+  border-radius: 0 0 5px 5px;
+}
+.sub10 .head .skull .line1 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 20.6rem;
+}
+.sub10 .head .skull .line2 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 20.6rem;
+}
+.sub10 .head .skull .line3 {
+  transform: rotate(-180deg);
+  background: #010101;
+  width: 0.27rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 20.6rem;
+}
+.sub10 .head .skull .nose {
+  border-bottom: solid #010101 1.8rem;
+  border-left: solid rgba(255, 255, 255, 0) 1rem;
+  border-right: solid rgba(255, 255, 255, 0) 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 16rem;
+}
+.sub10 .head .skull .eye {
+  width: 14rem;
+  height: auto;
+  background: transparent;
+}
+.sub10 .eye {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 6rem;
+}
+.sub10 .eye .left-eye, .sub10 .eye .right-eye, .sub10 .sub9 .head .skull .eye .right-eye, .sub9 .head .skull .sub10 .eye .right-eye {
+  width: 6rem;
+  height: 7rem;
+  background: linear-gradient(#a10100, #da1f05, #f33c04, #fe650d, #ffc11f, #fff75d);
+  border-radius: 50%;
+  border: solid black 1px;
+}
+.sub10 .eye .left-eye::before, .sub10 .eye .right-eye::before, .sub10 .sub9 .head .skull .eye .right-eye::before, .sub9 .head .skull .sub10 .eye .right-eye::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.5rem;
+  top: 7.6rem;
+}
+.sub10 .eye .right-eye {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sub10 .left-horn, .sub10 .right-horn {
+  width: 6em;
+  height: 6rem;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 1.5rem 1.5rem 0.01rem 0.1rem #e51c24;
+  border-radius: 50%;
+  position: absolute;
+  left: 3.5rem;
+  top: -4em;
+  z-index: -1;
+  transform: rotate(120deg);
+}
+.sub10 .right-horn {
+  position: absolute;
+  left: 9.8rem;
+  top: -4rem;
+  transform: rotate(-31.5deg);
+}
